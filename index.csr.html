@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en" data-beasties-container="">
+<head>
+  <meta charset="utf-8">
+  <title>ShadowrunCPR</title>
+  <base href="/SRhighway88/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <!-- Matrix Global Styling -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background-color: #000;
+      font-family: 'Share Tech Mono', monospace;
+      color: #00ff41;
+      overflow-x: hidden;
+    }
+
+    /* Prevent white flash before Angular loads */
+    app-root {
+      display: block;
+      min-height: 100vh;
+      background: radial-gradient(circle at center, #001100 0%, #000000 70%);
+    }
+
+    /* Subtle animated background glow */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      background: repeating-linear-gradient(
+        to bottom,
+        rgba(0, 255, 65, 0.04),
+        rgba(0, 255, 65, 0.04) 1px,
+        transparent 1px,
+        transparent 3px
+      );
+      animation: flicker 6s infinite alternate;
+    }
+
+    @keyframes flicker {
+      0% { opacity: 0.8; }
+      100% { opacity: 1; }
+    }
+
+    /* Optional: smooth font rendering */
+    body {
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+  </style>
+
+<link rel="stylesheet" href="styles-5INURTSO.css"></head>
+<body ngcm="">
+  <app-root></app-root>
+<script src="main-H52GU7G6.js" type="module"></script></body>
+</html>
